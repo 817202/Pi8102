@@ -1,0 +1,531 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <title>Peta Interaktif — KPU — Maluku Tenggara</title>
+    <link rel="icon" type="image/png" href="data:image/png;base64,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">
+
+    <!-- Leaflet CSS & JS -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+
+    <!-- Leaflet Geocoder -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet-control-geocoder/dist/Control.Geocoder.css" />
+    <script src="https://unpkg.com/leaflet-control-geocoder/dist/Control.Geocoder.js"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background: #e9f0f5;
+        }
+        .container {
+            max-width: 1600px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+            overflow: hidden;
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .sidebar {
+            width: 420px;
+            background: #f8fafc;
+            border-right: 1px solid #cbd5e1;
+            padding: 25px 20px;
+            display: flex;
+            flex-direction: column;
+            gap: 25px;
+            max-height: 96vh;
+            height: 96vh;
+            overflow-y: auto;
+        }
+        .map-container {
+            flex: 1;
+            min-width: 300px;
+            height: 96vh;
+            position: relative;
+        }
+        #map {
+            height: 100%;
+            width: 100%;
+        }
+        
+        .title-with-arrow {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 2px solid #b0c4de;
+            padding-bottom: 10px;
+            margin-bottom: 15px;
+        }
+        .title-left {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+        .title-left h2 {
+            font-size: 1.5rem;
+            margin: 0;
+            color: #0f3b5c;
+        }
+        .btn-locate {
+            background: none;
+            border: none;
+            cursor: pointer;
+            font-size: 1.5rem;
+            color: #2c7da0;
+            transition: 0.2s;
+            padding: 5px;
+            border-radius: 50%;
+            width: 40px;
+            height: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .btn-locate:hover {
+            background: #e6f2fc;
+            transform: scale(1.05);
+        }
+        .btn-locate:active {
+            transform: scale(0.95);
+        }
+        #scrollToDistanceBtn {
+            background: none;
+            border: none;
+            cursor: pointer;
+            font-size: 1.3rem;
+            color: #2c7da0;
+            transition: 0.2s;
+            padding: 5px;
+            border-radius: 50%;
+            width: 35px;
+            height: 35px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        #scrollToDistanceBtn:hover {
+            background: #e6f2fc;
+            transform: translateY(3px);
+        }
+        
+        h3 {
+            font-size: 1.2rem;
+            margin: 20px 0 12px 0;
+            color: #1e4a6e;
+        }
+        .coordinate-list {
+            max-height: 500px;
+            height: auto;
+            overflow-y: auto;
+            background: white;
+            border-radius: 16px;
+            border: 1px solid #dce5ec;
+            padding: 10px 8px;
+        }
+        .coord-item {
+            padding: 10px 12px;
+            margin: 6px 0;
+            border-radius: 12px;
+            background: #ffffff;
+            cursor: pointer;
+            transition: 0.2s;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: center;
+            border: 1px solid #e2e8f0;
+        }
+        .coord-item:hover {
+            background: #e6f2fc;
+            transform: translateX(5px);
+        }
+        .coord-info {
+            flex: 1;
+            min-width: 160px;
+        }
+        .coord-name {
+            font-weight: 700;
+            color: #1e293b;
+            font-size: 0.85rem;
+        }
+        .coord-latlng {
+            font-family: monospace;
+            font-size: 0.65rem;
+            color: #475569;
+            margin-top: 3px;
+        }
+        .coord-actions {
+            display: flex;
+            gap: 8px;
+            align-items: center;
+        }
+        .url-btn {
+            background: #34a853;
+            border: none;
+            color: white;
+            border-radius: 20px;
+            padding: 6px 12px;
+            font-size: 0.7rem;
+            cursor: pointer;
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            gap: 5px;
+            transition: 0.2s;
+        }
+        .url-btn:hover {
+            background: #2c8e47;
+            transform: scale(1.02);
+        }
+        .distance-panel {
+            background: white;
+            border-radius: 20px;
+            padding: 18px;
+            border: 1px solid #cbd5e6;
+            margin-top: 5px;
+        }
+        .distance-panel select {
+            width: 100%;
+            padding: 10px 12px;
+            margin: 8px 0;
+            border-radius: 40px;
+            border: 1px solid #cbd5e1;
+            background: white;
+            font-weight: 500;
+            font-size: 0.85rem;
+            cursor: pointer;
+        }
+        .action-buttons {
+            display: flex;
+            gap: 12px;
+            margin-top: 15px;
+            margin-bottom: 5px;
+            flex-wrap: wrap;
+        }
+        .btn-primary, .btn-driving {
+            background: #2c7da0;
+            color: white;
+            border: none;
+            padding: 10px 12px;
+            border-radius: 40px;
+            font-weight: bold;
+            cursor: pointer;
+            flex: 1;
+            font-size: 0.85rem;
+            transition: 0.2s;
+            text-align: center;
+        }
+        .btn-primary:hover {
+            background: #1f5e7a;
+        }
+        .btn-driving {
+            background: #34a853;
+        }
+        .btn-driving:hover {
+            background: #2c8e47;
+        }
+        .result-box {
+            background: #eef2ff;
+            padding: 12px;
+            border-radius: 16px;
+            margin-top: 12px;
+            font-size: 0.85rem;
+            text-align: left;
+            font-weight: 500;
+            line-height: 1.5;
+        }
+        .search-box {
+            margin-bottom: 12px;
+        }
+        .search-box input {
+            width: 100%;
+            padding: 10px 14px;
+            border-radius: 40px;
+            border: 1px solid #ccc;
+            font-size: 0.85rem;
+        }
+        .info-text {
+            font-size: 0.7rem;
+            color: #4b5563;
+            margin-top: 12px;
+            text-align: center;
+        }
+        .stats-info {
+            font-size: 0.75rem;
+            color: #2c7da0;
+            text-align: center;
+            margin-top: 8px;
+            font-weight: 500;
+        }
+        footer {
+            text-align: center;
+            font-size: 0.85rem;
+            color: #6c757d;
+            margin-top: 15px;
+            padding-top: 10px;
+            border-top: 1px solid #e2e8f0;
+            font-family: 'Courier New', Courier, monospace;
+        }
+        @media (max-width: 760px) {
+            .sidebar {
+                width: 100%;
+                max-height: 50vh;
+                height: 50vh;
+            }
+            .map-container {
+                height: 50vh;
+            }
+            .coordinate-list {
+                max-height: 300px;
+            }
+        }
+        .leaflet-popup-content {
+            font-size: 0.8rem;
+        }
+        .loading {
+            text-align: center;
+            padding: 30px;
+            color: #666;
+        }
+        label {
+            font-weight: 600;
+            color: #1e4a6e;
+            margin-left: 5px;
+        }
+        select option {
+            padding: 8px;
+        }
+        .waypoint-item {
+            display: flex;
+            gap: 8px;
+            align-items: center;
+            margin-bottom: 10px;
+            flex-wrap: wrap;
+        }
+        .waypoint-item select {
+            flex: 1;
+            padding: 8px 12px;
+            border-radius: 40px;
+            border: 1px solid #cbd5e1;
+            font-size: 0.8rem;
+            background: white;
+            margin: 0;
+        }
+        .remove-waypoint {
+            background: #dc2626;
+            color: white;
+            border: none;
+            border-radius: 50%;
+            width: 32px;
+            height: 32px;
+            cursor: pointer;
+            font-size: 0.8rem;
+            transition: 0.2s;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .remove-waypoint:hover {
+            background: #b91c1c;
+        }
+        #addWaypointBtn {
+            background: #D5D5D5;
+            margin: 10px 0 5px 0;
+            width: 100%;
+            padding: 10px 12px;
+            border-radius: 40px;
+            border: none;
+            color: black;
+            font-weight: bold;
+            cursor: pointer;
+            font-size: 0.85rem;
+            transition: 0.2s;
+        }
+        #addWaypointBtn:hover:not(:disabled) {
+            background: #f5f5f5;
+            color: black;
+        }
+        #addWaypointBtn:disabled {
+            background: #9ca3af;
+            color: lightgrey;
+            cursor: not-allowed;
+        }
+        .segment-item {
+            padding: 5px 0;
+            border-bottom: 1px dashed #e2e8f0;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <div class="sidebar">
+        <div>
+            <div class="title-with-arrow">
+                <div class="title-left">
+                    <button id="locateUserBtn" class="btn-locate" title="Check lokasi saya">
+                        <i class="fas fa-map-marker-alt"></i>
+                    </button>
+                    <h2>Peta Interaktif</h2>
+                </div>
+                <button id="scrollToDistanceBtn" title="Gulir ke fitur Hitung Jarak">
+                    <i class="fas fa-arrow-down"></i>
+                </button>
+            </div>
+            <div class="search-box">
+                <input type="text" id="searchInput" placeholder="🔍 Cari nama lokasi... (contoh: Kei, Ohoiel)">
+            </div>
+            <div class="coordinate-list" id="coordList">
+                <div class="loading">Memuat data...</div>
+            </div>
+            <div class="stats-info" id="statsInfo"></div>
+        </div>
+
+        <div class="distance-panel">
+            <h3><i class="fas fa-ruler-combined"></i> Hitung Jarak</h3>
+            <label><i class="fas fa-play-circle"></i> Pilih Titik Awal:</label>
+            <select id="startPointSelect">
+                <option value="">-- Pilih Lokasi Awal --</option>
+            </select>
+            <label><i class="fas fa-flag-checkered"></i> Pilih Titik Tujuan:</label>
+            <select id="endPointSelect">
+                <option value="">-- Pilih Lokasi Tujuan --</option>
+            </select>
+
+            <div id="extraWaypointsContainer"></div>
+
+            <button id="addWaypointBtn" disabled><i class="fas fa-plus"></i>  Tambah Tujuan</button>
+
+            <div class="action-buttons">
+                <button id="calculateDistanceBtn" class="btn-primary"><i class="fas fa-calculator"></i><br>Kalkulasi</button>
+                <button id="drivingRouteBtn" class="btn-driving"><i class="fas fa-car"></i><br>Drive</button>
+                <button id="resetMapBtn" class="btn-primary"><i class="fas fa-undo-alt"></i><br>Reset</button>
+            </div>
+
+            <div id="distanceResult" class="result-box">
+                📍 Pilih titik/lokasi awal dan tujuan, lalu tekan "Kalkulasi"
+            </div>
+            <div class="info-text">
+                💬 Klik 1x di nama lokasi untuk memperbesar peta<br>
+                🔎 Tombol <i class="fas fa-external-link-alt"></i> melihat lokasi nyata di Google Maps<br>
+                🚗 Tombol <i class="fas fa-car"></i><b> Drive</b> beralih ke navigasi berkendara<br>
+                ➕ Tombol <b>Tambah Tujuan</b> mulai dari 2 — 9 lokasi
+            </div>
+        </div>
+		<footer>
+			<div style="display: flex; align-items: center; justify-content: center; gap: 8px;">
+				<img id="footer-logo" title="" style="width:14px; height:16px; display:block; pointer-events: none;">
+				<span id="totalCount"></span>
+			</div>
+		</footer>
+
+        <script>
+            (function() {
+                let totalCount = 202;
+                let X = 1580 * 5;
+                let totalHasil = totalCount + X;
+                const Y = atob("NjI4NTEyMzEyMzkyNA==");
+                let link = `<a href="https://wa.me/${Y}" target="_blank">${totalHasil}</a>`;
+                
+                function setPermanentValue() {
+                    let elem = document.getElementById("totalCount");
+                    if (elem && elem.innerHTML !== link) {
+                        elem.innerHTML = link;
+                    }
+                }
+                
+                setPermanentValue();
+                
+                let targetNode = document.getElementById("totalCount");
+                if (targetNode) {
+                    let observer = new MutationObserver(function(mutations) {
+                        mutations.forEach(function(mutation) {
+                            if (mutation.type === 'childList' || mutation.type === 'characterData') {
+                                if (targetNode.innerHTML !== link) {
+                                    targetNode.innerHTML = link;
+                                }
+                            }
+                        });
+                    });
+                    observer.observe(targetNode, { childList: true, characterData: true, subtree: true });
+                }
+            })();
+        </script>
+    </div>
+    <div class="map-container">
+        <div id="map"></div>
+    </div>
+</div>
+
+<script src="./lokasi.js"></script>
+<script src="./fungsi.js"></script>
+
+<script>
+  (function() {
+    const faviconElement = document.querySelector("link[rel*='icon']");
+    
+    if (faviconElement && faviconElement.href.startsWith('data:image')) {
+      const footerImg = document.getElementById("footer-logo");
+      
+      if (footerImg) {
+        footerImg.src = faviconElement.href;
+      }
+    } else {
+      console.error("Icon base64 tidak ditemukan di <head>");
+    }
+  })();
+</script>
+
+<script>
+document.addEventListener("DOMContentLoaded", async () => {
+    if (typeof locations === 'undefined' || locations.length === 0) {
+        console.error("Data lokasi kosong! Pastikan dimuat dengan benar.");
+        document.getElementById("coordList").innerHTML = "<div style='padding:30px;text-align:center'>⚠️ Data lokasi belum diisi</div>";
+        return;
+    }
+    
+    await initMarkers();
+    renderLocationList();
+    populateDistanceDropdowns();
+    addGeocoder();
+    
+    document.getElementById("searchInput").addEventListener("input", (e) => {
+        renderLocationList(e.target.value);
+    });
+    document.getElementById("calculateDistanceBtn").addEventListener("click", calculateAndShowDistance);
+    document.getElementById("resetMapBtn").addEventListener("click", resetMapView);
+    document.getElementById("drivingRouteBtn").addEventListener("click", openDriveRoute);
+    document.getElementById("addWaypointBtn").addEventListener("click", addWaypoint);
+    document.getElementById("scrollToDistanceBtn").addEventListener("click", scrollToDistancePanel);
+    document.getElementById("locateUserBtn").addEventListener("click", locateUser);
+    
+    document.getElementById("startPointSelect").addEventListener("change", () => {
+        resetCalculationResult();
+        populateDistanceDropdowns();
+        updateAddButtonState();
+    });
+    document.getElementById("endPointSelect").addEventListener("change", () => {
+        resetCalculationResult();
+        populateDistanceDropdowns();
+        updateAddButtonState();
+    });
+    
+    renderExtraWaypoints();
+    
+    setTimeout(() => {
+        resetMapView();
+    }, 300);
+});
+</script>
+</body>
+</html>
